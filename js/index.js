@@ -1,6 +1,7 @@
 const nombreUI = document.querySelector("#nombre");
 const telefonoUI = document.querySelector("#telefono");
-const precioUI = document.querySelector("#precio");
+const correoUI = document.querySelector("#correo");
+const consultaUI = document.querySelector("#consulta");
 const enviarBTN = document.querySelector("#btn");
 const mostrar = document.querySelector(".mostrar");
 const formulario = document.querySelector("#formulario");
@@ -13,7 +14,8 @@ function agregar(event) {
     const objeto = {
         nombre: nombreUI.value,
         telefono: telefonoUI.value,
-        precio: precioUI.value 
+        correo: correoUI.value, 
+        consulta: consultaUI.value,
 
     }
     datos = JSON.parse(localStorage.getItem("valores"));
@@ -39,8 +41,10 @@ function pintar(){
         <div class="card">
         <h3>${dato.nombre}</h3>
         <h3>${dato.telefono}</h3>
-        <h3>${dato.precio}</h3>
+        <h3>${dato.correo}</h3>
+        <h3>${dato.consulta}</h3>
         <button onClick="editar(${index})">editar</button>
+        <button onClick="borrar(${index})">borrar</button>
         </div>
         `;
         })
@@ -54,11 +58,21 @@ datos[index].nombre =nombreEdit;
 const telefonoEdit = prompt("edita el telefono", datos[index].telefono)
 datos[index].telefono =telefonoEdit;
 
-const precioEdit = prompt("edita el precio", datos[index].precio)
-datos[index].precio =precioEdit;
+const correoEdit = prompt("edita el correo", datos[index].correo)
+datos[index].correo =correoEdit;
+
+const consultaEdit = prompt("edita el consulta", datos[index].consulta)
+datos[index].consulta =consultaEdit;
 
 localStorage.setItem("valores",JSON.stringify(datos))
 
 pintar()
 
+}
+
+function borrar(index){
+    datos.splice(index,1);
+    localStorage.setItem("valores", JSON.stringify(datos));
+
+    pintar()
 }
