@@ -8,3 +8,130 @@ html{
     scroll-behavior: smooth;
 
 }
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(156, 154, 154);
+}
+
+h3{font-size: 2em;}
+
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border:2px solid 1px 1px 5px black;
+    color: black;
+    background-color: goldenrod;
+}
+
+
+
+button:hover{
+    background-color: white;
+}
+
+.container{
+   max-width: 2400px;
+   background-color: gainsboro;
+      
+   
+}
+
+header{
+    background-color: black;
+
+   
+}
+
+header .logo{
+    margin:0;
+    display: flex;
+     height: 80px;
+    
+     
+}
+
+header .container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+                      
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-left: 5em;
+      
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(162, 126, 34);
+    font-size: 1.5em;
+    padding: 5px 12px;
+    margin-right: 20%;
+    margin-left: 10%;
+    
+}
+
+header a:hover{
+    color:rgb(182, 176, 158);
+
+}
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0px;
+    padding: 15em 5em 5em;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+background-color: gainsboro;
+}
+
+@media (min-width: 60px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+      
+    }
+
+   
+    footer .container{
+        justify-content: flex-end;
+    
+    }
+}
+
+@media (min-width: 300px) {
+    #final{
+        background-position-x: calc(15vw - 100px);
+    }
+
+}
