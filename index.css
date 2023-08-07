@@ -12,6 +12,14 @@ html{
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(221, 219, 219);
+    
+}
+
+#formulario{
+    padding-top: 15%;
+    text-align:center;
+    padding-bottom: 25%;
+    
 }
 
 h3{font-size: 2em;}
@@ -20,7 +28,7 @@ h3{font-size: 2em;}
 button{
     font-size: 1em;
     font-weight: bold;
-    padding: 5px 5px;
+    padding: 5px 15px;
     border-radius: 15px;
     border:2px solid 1px 1px 5px red;
     color: black;
@@ -36,6 +44,7 @@ button:hover{
 .container{
    max-width: 1200px;
    background-color: gainsboro;
+   
       
    
 }
@@ -58,31 +67,6 @@ header .container{
     flex-direction: column;
                       
 }
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 1.5em;
-    padding-left: 5em;
-      
-}
-
-header a{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(162, 126, 34);
-    font-size: 1.5em;
-    padding: 5px 12px;
-    margin-right: 20%;
-    margin-left: 10%;
-    
-}
-
-header a:hover{
-    color:rgb(182, 176, 158);
-
-}
-
 
 footer{
     background-color: rgb(230,230,230);
