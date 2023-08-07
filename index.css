@@ -69,13 +69,19 @@ header .container{
 }
 
 footer{
-    background-color: rgb(230,230,230);
+    background-color: black;
+    color:rgb(205, 47, 47);
+    font-size: large;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 35px;
 }
 
 footer p{
     margin: 0px;
-    padding: 15em 5em 5em;
-    color: rgb(100,100,100);
+    
+    color: rgb(205, 47, 47);
+    background-color: black;
 }
 
 footer .container{
@@ -83,10 +89,10 @@ footer .container{
     display: flex;
     justify-content: center;
     align-items:center;
-background-color: gainsboro;
+background-color: black;
 }
 
-@media (min-width: 60px){
+@media (min-width: 1000px){
     header{
         position: fixed;
         width: 100%;
@@ -98,20 +104,18 @@ background-color: gainsboro;
         
     }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-      
-    }
+
 
    
     footer .container{
         justify-content: flex-end;
+        background-color: black;
+        
     
     }
 }
 
-@media (min-width: 300px) {
+@media (min-width: 800px) {
     #final{
         background-position-x: calc(15vw - 100px);
     }
